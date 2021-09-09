@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="#FFFFFF"
+        android:scaleType="fitXY"
+        android:src="@drawable/downloadimage"></ImageView>
+    <TextView
+        android:id="@+id/updateinfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        ></TextView>
+    <Button
+        android:id="@+id/start_download"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="开始下载更新/安装更新"></Button>
+    <Button
+        android:id="@+id/pause_download"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="暂停下载"></Button>
+    <Button
+        android:id="@+id/cancel_download"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="取消下载/删除已下载部分"></Button>
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:max="100"
+        android:progress="0"
+        ></ProgressBar>
+</LinearLayout>
